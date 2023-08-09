@@ -1,0 +1,59 @@
+Sistemas de control de versiones (VCS)
+
+Nos permite recuperar una versión particular de un archivo o conjunto de archivos. comparar diferentes versiones, determinar quién y cuándo se hizo un determinado cambio.
+
+sistema de control de versiones centralizado
+Poseen un unico servidor donde se almacenan los archivos versionados, y por lo tanto todos los usuarios se conectan al mismo para actualizar o descargar los mismos
+
+GIT
+Git maneja sus datos como una secuencia de copias instantaneas.
+La mayosía de las operaciones que se realizan en Git son locales, por lo que se puede trabajar completamente desconectado del repositorio principal hasta que se sincronicen los cambios con este.
+
+conceptos basicos
+repositorio: ahi ponemos las cosas
+add: antes del comit
+commit: guardamos los cambios en el repo
+branch: rama en la que vamos a trabajar, testing, produccion, etc.
+clone: clonar
+pull: traer del repo
+push: mandar
+merge: si ambos hicimos cambios los junta, un quilombo siempre antes de un push hay que hacer un pull SI O SI.
+
+
+Branch strategies
+tenemos una rama principal llamada main
+basicamente es, usando las herramientas que nos brinda git, y ciertos principios y estrategias, determinar una organizacion de un repositorio.
+tenemos versiones de desarrollo, estables, etc.
+seguir convenciones a la hora de hacer ramas.
+
+ramas
+main: estable
+hotfix: la cagaste hermano lo arreglamos pero no tan urgente como directo a main
+develop: ahi se desarrolla
+release: estables tambien, sale de develop para ir a master
+feature: para poner algo piola
+
+conventional commits
+cuando realizo un commit, tenemos una estructura indicada para escribir el commit.
+
+<type>[optional scope]: descipcion
+[cuerpo]
+[pie]
+
+type: tipo cambio, feat, fix, chore
+description: descripcion corta
+cuerpo: detalles adicionales
+pie: referenciar problemas o solicitudes
+
+hostings
+github
+bitBucket
+GitExtensions
+Fork
+
+git: herramienta linea de comandos
+
+dice que para algunas funciones complicadas hay que usar la linea de comando, yo hasta donde se se usa todo desde linea de comando wtf como haco un push sino
+
+vamos boca hoy loco
+
