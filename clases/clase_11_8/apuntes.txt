@@ -1,0 +1,72 @@
+abrir repo
+
+clonar repositorio - abrir la cuenta - clonar
+
+
+si modificamos un archivo, a la derecha aparece con un tick.
+
+para tirar comandos tenemos una ventana arriba a la derecha.
+
+muestra la branch, las opciones del commit, guardar en el stash (cambios en forma local sin commitear, podemos volver para atras y eso).
+
+commit and push, etc.
+
+nose que dice de backtracking
+
+la ventana es para poner el comentario del commit, la verdad me parece una cagada.
+
+hace un git commit -m "mensaje" mas facil
+
+tenemos 2 flechitas, eso estan bueno porque nos deja saber si tenemos cambios en el repo pero no lo tenemos en local.
+
+si queremos que queden en remoto tenemos que hacer los push.
+
+
+si queremos ver los cambios en un archivo, vamos a el archivo en cuestion, submenu git e historia. Podemos hasta comparar con 2 versiones diferentes.
+
+tambien podemos hacer un blame que nos deja ver quien hizo los cambios, para cuando el salva rompa todo ajajjaja.
+
+dice que esta mal hacer commits sobre master. Esto es boca.
+
+si salva hace una pull request no se la aceptamos.
+
+ahi el profe hizo un commit en el repo, pero nunca un pull entonces en local no tiene el cambio pobrecito.
+
+ahora hizo un cambio en el local e hizo un push, no se lo dejo hacer porque la rama local está por detras de la remota, te recomienda hacer primero un pull y despues un push. 
+
+si cambiamos lo mismo hace un merge, lo junta
+
+abrio git extensions, se pudrio todo
+
+si hacemos un fetch traemos la info del server
+si queremos actualizar la rama local hacemos un pull.
+
+se genero un conflict. 
+
+tenemos al rama master
+
+develop
+
+cuando queremos agregar una funcionalidad, hacemos una rama features.
+
+
+CREAR APP CONSOLA
+
+creamos una app de consola. Net está evolucionando. Tenemos net framework y net core.
+
+visual studio organiza el codigo
+
+solucion: agrupacion de archivos que son necesarios para compilar una app, está representada en el codigo fuente por un archivo .sln 
+
+Podemos tener diferentes proyectos asociados a esa solucion
+
+los proyectos son representaciones físicas de los archivos
+
+los proyectos son de diferentes tipos.
+
+
+
+
+
+
+
