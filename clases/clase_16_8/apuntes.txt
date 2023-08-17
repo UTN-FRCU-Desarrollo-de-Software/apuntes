@@ -1,0 +1,148 @@
+aaron hizo una pregunta interesante. Si nosotros modificamos el repo local y no commiteamos, pero hacemos un push, ¿Qué pasa?
+A lo que el profe, nos respondio
+
+workspace --- commit ---> repo local ---- push ----> repo remoto
+
+workspace <---- pull --- repo local <---- fetch ---- repo remoto
+
+buena pregunta aaron.
+
+INTRODUCCION AL LENGUAJE C# Y .NET
+
+.net
+es una plataforma de desarrollo open source. Multiplataforma (la misma app corre en distintos SO).
+las aplicaciones se ejecutan en un entorno de software, conocido como common language runtime (CLR).
+Provee un conjunto de clases, conocida como Base Class Library (BCL).
+Posee soporte para varios lenguajes, lo que permite la inteoperatibilidad entre ellos.
+
+net framework: framework original. Soporta sitios webs, servicios, apps de escritorio y mas en windows.
+
+net core: implementacion multiplataforma de .net para sitios web, servidores y aplicaciones de consola para windows, linux y macos.
+
+xamarin / mono: implementacion de .net para ejecutar aplicaciones en los ppales sistemas operativos mobile.
+
+.net framework: CLR --> BCL --> Win forms, ASP.NET ADO.NET
+
+asp.net: hacer apps web
+ado.net: persistencia de datos :) 
+
+los programadores usan c# porque es piola dice el profe.
+
+c# --> compilador --> 	CIL  --> CLR --> binario
+
+cil: common intermediate languaje
+Este se creo para tener un código intermedio, que sea igual para cada plataforma, re bien.
+
+EL LENGUAJE C#
+
+Surge en la antigua roma
+
+Fuertemente tipoado
+Multiparadigma: oriendato a objetos, eventos, funcional.
+A nivel de sintaxis tiene varias similitudes con JAVA, ya que ambos heredan la sintaxis de C 
+/ C++
+C++ es C mas objetos (y más...)
+Estandarizado en ECMA e ISO
+
+Objetivos de diseño
+- Simple, moderno, de proposito gral y orientado a objetos.
+- Debe proveer soporte para la verificación de tipos y límites de arrays, deteccion de intentos de uso de variables sin inicializar, y liberación automática de memoria (Garbaje Collector).
+- El lenguaje debe ser adecuado para el desarrollo de componentes de software para el despliege en entornos distribuidos.
+- Es muy importante la portabilidad del código fuente.
+- El soporte para la internacionalizacipon es importante.
+- Si bien las apps escritas en C# tienen que ser económicas en lo que se refiere a los requisitos de memoria y de capacidad de procesameinto, no es la intencion del lenguaje competir directamente en performance y tamaño con C y C++
+
+también
+- Encapsulamiento
+- Herencia
+- Abstaccion-
+- Polimorfismo
+
+Tiene librería para comunicarse entre diferentes máquinas, a traves del protocolo TC/TCP
+
+También soporta multihilos
+
+Robusto
+-reacciona apropiadamente a situaciones exepcionales que pudieran comprometer su correcto funcionamiento.
+- Fuertemente tipado
+- Proporciona numerosas comprobaciones durante la compilacion
+- no permite sobreescribir la memoria
+- facilita el manejo de errores ---> EXEPCIONES (error en tiempo de ejecución).
+
+COMPILACION
+el codigo fuente se escribe en texto plano extension cs
+es compilado a un archivo con extensión exe o dll, que está en el IL (Intermediate Language)
+El IL es interpretado y ejecutado por la CRL, la cual genera el código nativo.
+
+ESTRUCTURA APLICACION
+
+using System; //significa que esta clase utiliza otras clases del paquete system
+
+namespace TallerDeProgramacion // Agrupamos clases por conjuntos
+{
+class Program
+{
+ // creamos la clase programa
+
+	static void Main(strings[] args)
+	{
+		Console.WriteLine("Hola Mundo!");
+	}
+
+}
+
+Sentencia
+Línea simple de código terminada en ;
+
+Bloque
+Conjunto de sentencias contenidas entre llaves {} 
+
+Variables
+Contenedor de datos identificado mediante un nombre
+
+var de instancia: atributos de los objetos, son unicos por cada objeto
+
+var de clase: atributos de las clases, por lo que sus valores son unicos para cada clase a la que pertenecen.
+
+class Program
+{
+
+	private int iVarDeInstancia
+	private static int cVariableDeClase
+
+}
+
+si creamos n objetos de program, las n variables de instancia vana  tener valores distintos, porque son del objeto
+
+las de clase son de la clase
+
+nomenclatura: forma en la que escribimos codigo
+- Case sensitive
+- id secuencua alfanumerica
+- UpperCamelCaseParaLosIdentificadoresJaajajajajajQueOcurrenteSoy
+- UCC para id de clases, interfaces y metodos, UCC es lo de arriba
+- id de variables con lowerCamelCase.
+
+nomenclatura
+los id de las variables de instancia suelen comensar con i, f o _
+las var de clase, comienzan con la letra c
+las interfaces tienen como prefijo la I
+los id de las constantes se escriben con todos los caracteres en mayuscula, separados por _
+
+tipos de datos
+todas las vars deben declararse antes de utilizarse, indicando su tipo
+
+tipo de valor: primitivos, int, char y float, etc.
+
+tipo de referencia: clases y otros tipos de datos complejos que se construyen a partir de los tipos primitivos, con referencia a los primitivos.
+
+tipos de referencia
+Almacena una referencia a un objeto en memoria
+son menos eficientes que los tipos de valor, pero son más flexibles.
+ej:
+- instancias de la clase String
+- instancias de las clases que forman parte de .NET	
+- instancias de las clases importadas o escritas por nosotros.
+
+
+
